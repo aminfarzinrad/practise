@@ -478,6 +478,43 @@
 .header-bottom-right-image{
     width: 100%;
 }
+/* start maain-works */
+
+.main{}
+.works{
+  text-align: center;
+}
+.works-title{
+  color: #6C7890;
+  margin-bottom: 0;
+}
+.works-text{
+  color: #081D43;
+  font-family: "ttnorms medium";
+  font-weight: normal;
+  margin-top: 0.8rem;
+}
+.works-content{
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+.works-content-box{}
+.works-content-box-title{
+  color: #081D43;
+}
+.works-content-box-text{
+  color: #6C7890;
+  max-width: 16rem;
+  line-height: 2rem;
+}
+.works-image{
+  max-width: 31rem;
+  margin: 0 auto;
+}
+.works-image-image{
+  width: 100;
+}
   /* break point */
 
   @media only screen and (max-width: 1200px) {
