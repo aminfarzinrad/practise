@@ -504,7 +504,8 @@ body {
   justify-content: space-around;
   margin-bottom: 3rem;
 }
-.works-content-item {}
+.works-content-item {
+}
 .works-content-item-title {
   color: #081d43;
 }
@@ -524,8 +525,8 @@ body {
 
 .person-comment {
   text-align: center;
-  background: #2F5BEA;
-  color: #FFFFFF;
+  color: #ffffff;
+  background-color: #2f5bea;
   padding: 2rem 0;
 }
 .person-comment-title {
@@ -537,10 +538,10 @@ body {
 }
 .comments {
   display: flex;
-  margin: 3.5rem 00;
+  margin: 3.5rem 0;
 }
 .comment {
-  background: #ffffff;
+  background-color: #ffffff;
   margin: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -553,19 +554,20 @@ body {
   padding: 1.2rem;
 }
 .comment-content-text {
-  color: #7E8085;
   font-family: "times roman italic";
+  color: #7e8085;
   margin: 0;
   line-height: 1.5rem;
 }
 .comment-info {
   display: flex;
   align-items: center;
-  padding: 0.8rem 1.2rem;
   border-top: 1px solid #e8ebef;
+  padding: 0.8rem 1.2rem;
 }
-.comment-info-image {}
-.comment-info-nmae {
+.image-person-info {
+}
+.name-person {
   color: #000000;
   margin: 0 0 0 0.5rem;
 }
