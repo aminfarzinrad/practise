@@ -488,11 +488,11 @@ body {
 .works {
   text-align: center;
 }
-.works-text {
+.works-text, .portfolio-text {
   color: #6c7890;
   margin-bottom: 0;
 }
-.works-title {
+.works-title, .portfolio-title {
   color: #081d43;
   font-family: "ttnorms medium";
   margin-top: 0.8rem;
@@ -586,6 +586,28 @@ body {
 }
 .image-comany{
   display: block;
+}
+/* start main-section-portfolio */
+
+.portfolio{
+  text-align: center;
+  padding: 2rem 0;
+}
+.portfolio-text{}
+.portfolio-title{}
+.portfolio-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.portfolio-item{
+  flex-basis: 23rem;
+  margin-bottom: 2rem;
+}
+.portfolio-image{
+  width: 100%;
+  border-radius: 0.5rem;
 }
 /* start footer */
 /* break point */
