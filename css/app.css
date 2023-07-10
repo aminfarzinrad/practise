@@ -599,7 +599,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 3rem;
+  margin-top: 3rem;
 }
 .portfolio-item{
   flex-basis: 23rem;
