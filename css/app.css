@@ -610,7 +610,45 @@ body {
 .portfolio-image{
   width: 100%;
 }
-/* start footer */
+/* start footer-top */
+
+.footer{}
+.footer-top{
+  background-color: #2C57E4;
+  color: #ffffff;
+  padding: 4.5rem 0;
+}
+.footer-top-warpper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-top-warpper-text{
+  font-size: 1.6rem;
+}
+.email{
+  background-color: #ffffff;
+  flex-basis: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.4rem 0.4rem 1.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.email-address-input{
+  border: none;
+  outline: none;
+}
+.email-address-btn{
+  background-color: #2C57E4;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
 /* break point */
 
 @media only screen and (max-width: 1200px) {
