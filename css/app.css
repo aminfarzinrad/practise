@@ -618,29 +618,29 @@ body {
   color: #ffffff;
   padding: 4.5rem 0;
 }
-.footer-top-warpper{
+.footer-top-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-top-warpper-text{
+.footer-top-container-text{
   font-size: 1.6rem;
 }
 .email{
   background-color: #ffffff;
-  flex-basis: 20rem;
   display: flex;
   justify-content: space-between;
+  flex-basis: 20rem;
   padding: 0.4rem 0.4rem 0.4rem 1.5rem;
   border-radius: 0.5rem;
   align-items: center;
 }
-.email-address-input{
+.email-input{
   border: none;
   outline: none;
 }
-.email-address-btn{
-  background-color: #2C57E4;
+.email-btn{
+  background-color: #2F5BEA;
   border: none;
   outline: none;
   padding: 1rem 1.5rem;
