@@ -431,6 +431,11 @@ body {
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
 }
+.header-icon{
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}
 /* start header-bottom */
 
 .header-bottom {
@@ -673,11 +678,32 @@ body {
   .container {
     max-width: 720px;
   }
+  .header-link{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+  .header-icon{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    top: 0;
+    left: -288px;
+    bottom: 0;
+    width: 16rem;
+    background-color: #87bc25;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    transition: 0.3s all;
+  }
+  .menu-item{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 }
 
