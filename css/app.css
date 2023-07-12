@@ -508,8 +508,11 @@ body {
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 .works-content-item {
+  flex-basis: 16rem;
+  flex-shrink: 0;
 }
 .works-content-item-title {
   color: #081d43;
@@ -721,10 +724,20 @@ body {
     margin-bottom: 2rem;
     font-size: 1.2rem;
   }
+  .works-content-item{
+    flex-basis: 14rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .container {
+    max-width: 100%;
+  }
+  .works-content-item{
+    flex-basis: 100%;
+  }
+  .works-content-item-text{
     max-width: 100%;
   }
 }
