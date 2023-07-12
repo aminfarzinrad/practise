@@ -591,9 +591,11 @@ body {
   align-items: center;
   margin: 1rem;
   margin-top: 5rem;
+  flex-wrap: wrap;
 }
 .image-comany{
   display: block;
+  margin: 1rem;
 }
 /* start main-section-portfolio */
 
@@ -700,6 +702,15 @@ body {
   .header-content-link{
     margin-bottom: 1rem;
   }
+  .comments{
+    flex-wrap: wrap;
+  }
+  .comment{
+    flex-basis: 19rem;
+  }
+  .company{
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -728,6 +739,10 @@ body {
     flex-basis: 14rem;
     margin-bottom: 1.5rem;
   }
+  .comment{
+    margin: 0 0 1.5rem 0;
+    flex-basis: 15rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -739,5 +754,8 @@ body {
   }
   .works-content-item-text{
     max-width: 100%;
+  }
+  .comments{
+    flex-basis: 100%;
   }
 }
