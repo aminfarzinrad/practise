@@ -681,6 +681,22 @@ body {
   .header-link{
     display: none;
   }
+  .header-content{
+    flex-direction: column-reverse;
+  }
+  .header-content-wrapper{
+    max-width: 100%;
+  }
+  .header-bottom{
+    margin-top: 3rem;
+  }
+  .header-content-links{
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .header-content-link{
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
