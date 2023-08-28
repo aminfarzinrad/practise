@@ -1,0 +1,4 @@
+.gallery{
+    background-color: pink;
+    grid-column: 1/7;
+}
