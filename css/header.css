@@ -37,3 +37,8 @@
     background: white;
     color: orange;
 }
+@media screen and (max-width : 500px) {
+    .header{
+        background-position-x: 10%;
+    }
+}
