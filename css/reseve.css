@@ -1,4 +1,68 @@
 .reserve{
     grid-column: 1/7;
-    background-color: orange;
+}
+.section-reserve{
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000000), url("../image/back-orderig.jpg");
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr) 50px;
+    grid-template-rows: 1fr;
+    padding: 55px;
+    text-align: center;
+}
+.left{
+    grid-column: 2/3;
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+    display: grid;
+    grid-template-rows: 2fr 1fr repeat(3, 0.5fr) 2fr;
+    padding-top: 15px;
+}
+.left-title{}
+.branch{
+    color: goldenrod;
+    font-family: 'Satisfy', cursive;
+}
+.parantes{
+    color: goldenrod;
+}
+.order-text{
+    align-self: center;
+    font-family: 'Satisfy', cursive;
+}
+.right{
+    grid-column: 3/6;
+    background-color: rgba(255, 255, 255, 0.750);
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 2fr;
+    text-align: center;
+    padding: 10px;
+}
+.title-right{
+    color: goldenrod;
+    font-family: 'Satisfy', cursive;
+}
+.right-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.right-box-image{
+    width: 100%;
+    height: 120px;
+    clip-path: circle(25% at 50% 50%);
+}
+@media screen and (max-width : 785px) {
+    .left{
+        font-size: 12px;
+    }
+    .right{
+        font-size: 13px;
+    }
+    .section-reserve{
+        padding: 10px 0px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .section-reserve{
+        grid-template-columns: 15px repeat(4, 1fr) 15px;
+    }
 }
