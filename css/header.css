@@ -1,4 +1,38 @@
 .header{
     grid-column: 1/7;
-    background-color: red;
+    background-color: black;
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000000), url("../image/pic-header.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.header1{
+    font-size: 30px;
+    color: white;
+}
+.header2{
+    font-size: 40px;
+    color: white;
+}
+.header-text{
+    color: orange;
+}
+.btn{
+    padding: 20px 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: orange;
+    border: 1px solid orange;
+    justify-self: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: all 0.4s;
+}
+.btn:hover{
+    background: white;
+    color: orange;
 }
