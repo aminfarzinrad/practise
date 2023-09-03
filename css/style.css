@@ -70,22 +70,103 @@ a{
     max-width: 100%;
     margin: auto;
     grid-gap: 5rem;
+    min-height: calc(100vh - 100px);
 }
-.left{}
-.title-left{}
-.text-left{}
-.form-left{}
-.input{}
-.btn{}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-left{
+    font-size: 3rem;
+    width: 100%;
+    line-height: 3.5rem;
+    font-weight: 400;
+}
+.title-1{
+    font-weight: 700;
+    color: #5c48f2;
+}
+.title-2{
+    font-weight: 700;
+    color: #0f1e6a;
+}
+.text-left{
+    margin: 1rem 0 1.5rem 0;
+    color: #333333;
+}
+.form-left{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.input{
+    border: none;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    font-size: 0.8rem;
+    max-width: 300px;
+    width: 100%;
+    outline: 0;
+}
+.btn{
+    background-color: #5C48F2;;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
 .right{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    place-content: center;
+    position: relative;
 }
 .right-img{
     width: 100%;
     max-width: 300px;
+    border-radius: 10px;
 }
-.content-img-text{}
+.img-2{
+    transform: translateY(-70px);
+}
+.content-img-text{
+    background: linear-gradient(to right, rgba(92,72,238,0.6), rgba(15,30,106,0.4));
+    color: #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+}
 .items{}
-.item-item{}
+.item-item{
+    margin-bottom: 0.5rem;
+    list-style: disc;
+}
+@media screen and (max-width:999px) {
+    .section-nav-left{
+        display: none;
+    }
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left{
+        text-align: center;
+    }
+    .form-left{
+        justify-content: center;
+    }
+    .img-2{
+        transform: translateY(0);
+    }
+}
