@@ -68,6 +68,23 @@ body{
     color: #fff;
     font-weight: bold;
 }
+.litem-link-2{
+    padding: 18px 10px;
+    position: relative;
+}
+.litem-link-2::after{
+    content: '';
+    display: block;
+    transform: scale(0);
+    transition: transform 250ms ease-in;
+}
+.litem-link-2:hover:after{
+    transform: scale(1);
+}
+.litem-link-2 a{
+    color: #fff;
+    font-weight: bold;
+}
 .arrow-icon::before{
     content: '';
     border-bottom: 2px solid #fff;
@@ -108,6 +125,11 @@ ul.sub-menu li a{
     color: #000;
 }
 .litem-link:hover > .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+.litem-link-2:hover > .sub-menu{
     opacity: 1;
     visibility: visible;
     pointer-events: visible;
