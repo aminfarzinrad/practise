@@ -1,6 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{}
+body{
+    font-family: 'Poppins';
+    background-color: #dde1e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+.container{}
+.keyboard-section{
+    background-color: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.3);
+    width: 1000px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 18px 0;
+}
+.btn{
+    border: none;
+    background-color: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.3);
+    height: 50px;
+    min-width: 50px;
+    font-size: 20px;
+    color: #808080;
+    border-radius: 5px;
+}
+.space{
+    width: 60%;
+}
+.btn:focus{
+    color: #3498db;
+    font-size: 19px;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94, 104, 121, 0.3);
+}
+@media screen and (max-width:800px) {
+    .keyboard-section{
+        width: 500px;
+    }
+    .btn{
+        height: 30px;
+        min-height: 30px;
+        font-size: 12px;
+    }
+    .row{
+        gap: 10px;
+    }
+    .btn:focus{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:450px) {
+    .keyboard-section{
+        width: 400px;
+        padding: 5px;
+    }
+    .btn{
+        height: 20px;
+        min-height: 20px;
+        font-size: 9px;
+    }
+}
