@@ -3,3 +3,128 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'tanha';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/Tanha-FD.woff2) format(woff2);
+}
+body{
+    font-family: 'tanha';
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+.sidebar-nav{
+    position: relative;
+}
+.label{
+    cursor: pointer;
+}
+.label::before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 100%;
+    z-index: 100;
+    left: -7px;
+    top: 11px;
+    transition: all 250ms ease-out;
+}
+.label::after{
+    position: absolute;
+    z-index: 120;
+    left: -2px;
+    top: 18px;
+    content: '';
+    display: block;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-43deg);
+    transition: all 250ms ease-out;
+}
+.label:hover::before{
+    background-color: #000;
+}
+.label:hover::after{
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;    
+}
+.sidebar-items{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(22px);
+    width: 5.5rem;
+    border-radius: 10px;
+    padding: 0 24px;
+    height: 534px;
+    padding: 24px;
+    transition: all 250ms ease-out;
+}
+.sidebar-item{
+    color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    height: 40px;
+    align-items: center;
+    padding: 4px 5px;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    transition: all 250ms ease-out;
+    position: relative;
+}
+.icon{
+    font-size: 33px;
+}
+
+.sidebar-link{
+    color: #fff;
+    flex: 1;
+    text-align: center;
+    transform: translateX(26px);
+    opacity: 0;
+    transition: all 200ms ease-out;
+}
+.sidebar-item:hover , .sidebar-link:hover{
+    background-color: #fff;
+    color: #000;
+}
+#toggle:checked + label + ul{
+    width: 10.5rem;
+}
+#toggle:checked + label + ul li a{
+    transform: translateX(0);
+    opacity: 1;
+}
+#toggle:checked + label::after{
+    left: 1px;
+    transform: rotate(131deg);
+}
+.text{
+    position: absolute;
+    left: -22px;
+    background-color: #eb2a46;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 5px;
+}
