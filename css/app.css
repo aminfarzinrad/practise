@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    background-color: #17a2b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.input{}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.label{
+    color: #17a2b8;
+    cursor: pointer;
+    height: 100%;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+}
+.label:hover{
+    background-color: rgba(23, 162, 184, 0.3);
+}
+.active{
+    background-color: #17a2b8;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.input-2#home:checked ~ nav label.home-2,
+.input-2#blog:checked ~ nav label.blog-2,
+.input-2#code:checked ~ nav label.code-2,
+.input-2#help:checked ~ nav label.help-2,
+.input-2#about:checked ~ nav label.about-2{
+    color: #fff;
+}
+.input-2#blog:checked ~ nav .active{
+    left: 103px;
+}
+.input-2#code:checked ~ nav .active{
+    left: 203px;
+}
+.input-2#help:checked ~ nav .active{
+    left: 303px;
+}
+.input-2#about:checked ~ nav .active{
+    left: 404px;
+}
+.content_tabs{}
+.title_content{
+    font-size: 21px;
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+}
+.text_content{
+    text-align: justify;
+}
+.content{
+    display: none;
+}
+.input-2#home:checked ~ .content_tabs .content_home,
+.input-2#blog:checked ~ .content_tabs .content_blog,
+.input-2#code:checked ~ .content_tabs .content_code,
+.input-2#help:checked ~ .content_tabs .content_help,
+.input-2#about:checked ~ .content_tabs .content_about{
+    display: block;
+}
