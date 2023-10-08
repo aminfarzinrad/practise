@@ -4,31 +4,5 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #8a2be2;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loading{
-  display: flex;
-  column-gap: 2rem;
-}
-.loading .loading_circle:nth-child(2){
-  animation-delay: 0.25s;
-}
-.loading .loading_circle:nth-child(3){
-  animation-delay: 0.5s;
-}
-.loading_circle{
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background-color: #fff;
-  animation: loading 1.5s infinite;
-}
-@keyframes loading {
-  80%{
-    transform: scale(0);
-  }
+  font-family: 'Poppins';
 }
