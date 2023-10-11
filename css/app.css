@@ -1,6 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+}
+.container{
+  background-color: #fff;
+  width: 350px;
+  height: 370px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.header_content{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 65px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.text_header_contentt{}
+.list_option{
+  padding: 20px 30px;
+}
+.list_option input:checked +label{
+  background-color: #333;
+}
+.list_option input:checked +label .text{
+  color: #fff;
+}
+.list_option input:checked +label .dot{
+  background-color: #fff;
+}
+.list_option input:checked +label .dot::before{
+  background-color: #333;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+.input{}
+.label{
+  border: 1px solid #d3d3d3;
+  height: 53px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+.dot{
+  width: 20px;
+  height: 20px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  position: relative;
+}
+.dot::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  transition: all 0.3s ease;
+}
+.text{
+  padding-left: 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
