@@ -15,9 +15,7 @@
   font-weight: normal;
   src: url('../font/Sora-Bold.ttf') ;
 }
-html{
-  overflow-x: hidden;
-}
+html{}
 ul{
   list-style-type: none;
 }
@@ -41,7 +39,6 @@ body{
   position: relative;
   border-radius: 0px 0px 140px 140px;
   margin-bottom: 20rem;
-  overflow: hidden;
 }
 .navation_header{
   display: flex;
